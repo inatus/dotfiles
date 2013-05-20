@@ -60,3 +60,11 @@ else
                 \if has('gui_running') | source $MYGVIMRC
     autocmd MyAutoCmd BufWritePost $MYGVIMRC if has('gui_running') | source $MYGVIMRC
 endif
+
+let g:quickrun_config = {
+\   "_" : {
+\       "outputter/buffer/split" : ":botright 6sp",
+\       "outputter/buffer/close_on_empty" : 1,
+\   },
+\}
+
