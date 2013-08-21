@@ -72,3 +72,6 @@ let g:quickrun_config = {
 let g:quickrun_config['markdown'] = {
       \ 'outputter': 'browser'
       \ }
+
+" toggle <sp>ell
+nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_us<CR>:setlocal spell?<CR>
