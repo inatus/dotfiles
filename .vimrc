@@ -56,10 +56,10 @@ augroup MyAutoCmd
 augroup END
 
 if !has('gui_running') && !(has('win32') || has('win64'))
-    " .vimrcの再読込時にも色が変化するようにする
+    " .vimrc縺ｮ蜀崎ｪｭ霎ｼ譎ゅ↓繧り牡縺悟､牙喧縺吶ｋ繧医≧縺ｫ縺吶ｋ
     autocmd MyAutoCmd BufWritePost $MYVIMRC nested source $MYVIMRC
 else
-    " .vimrcの再読込時にも色が変化するようにする
+    " .vimrc縺ｮ蜀崎ｪｭ霎ｼ譎ゅ↓繧り牡縺悟､牙喧縺吶ｋ繧医≧縺ｫ縺吶ｋ
     autocmd MyAutoCmd BufWritePost $MYVIMRC source $MYVIMRC |
                 \if has('gui_running') | source $MYGVIMRC
     autocmd MyAutoCmd BufWritePost $MYGVIMRC if has('gui_running') | source $MYGVIMRC
