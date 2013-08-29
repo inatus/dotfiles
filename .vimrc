@@ -16,7 +16,7 @@ NeoBundle 'http://github.com/Shougo/unite.vim.git'
 NeoBundle 'http://github.com/altercation/vim-colors-solarized.git'
 NeoBundle 'http://github.com/thinca/vim-quickrun.git'
 NeoBundle 'http://github.com/glidenote/memolist.vim.git'
-NeoBundle 'https://github.com/tyru/open-browser.vim.git'
+NeoBundle 'http://github.com/tyru/open-browser.vim.git'
 
 syntax enable
 set background=dark
