@@ -1,11 +1,6 @@
 set nocompatible
 filetype off            " for vundle
 
-" Read .vimrc.local if any
-if filereadable(expand('~/.vimrc.local'))
-  source ~/.vimrc.local
-endif
-
 " Golang setting
 if $GOROOT != ''
   set rtp+=$GOROOT/misc/vim
@@ -83,3 +78,12 @@ let g:quickrun_config['markdown'] = {
 
 " toggle <sp>ell
 nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_us<CR>:setlocal spell?<CR>
+
+
+
+" -----------------------------------------
+" Read .vimrc.local if any
+" This must be described at the last line
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
