@@ -1,6 +1,11 @@
 set nocompatible
 filetype off            " for vundle
 
+" Read .vimrc.local if any
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
+
 " Golang setting
 if $GOROOT != ''
   set rtp+=$GOROOT/misc/vim
