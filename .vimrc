@@ -20,6 +20,7 @@ NeoBundle 'http://github.com/altercation/vim-colors-solarized.git'
 NeoBundle 'http://github.com/thinca/vim-quickrun.git'
 NeoBundle 'http://github.com/glidenote/memolist.vim.git'
 NeoBundle 'http://github.com/tyru/open-browser.vim.git'
+NeoBundle 'pentie/VimRepress'
 
 syntax enable
 set background=dark
