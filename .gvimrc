@@ -5,16 +5,16 @@ colorscheme solarized
 set guifont=Ricty:h12:cSHIFTJIS
 
 if has('multi_byte_ime') || has('xim')
-  " IME ON‚ÌƒJ[ƒ\ƒ‹‚ÌF‚ğİ’è(İ’è—á:‡)
+  " IME ONæ™‚ã®ã‚«ãƒ¼ã‚½ãƒ«ã®è‰²ã‚’è¨­å®š(è¨­å®šä¾‹:ç´«)
   highlight CursorIM guibg=Purple guifg=NONE
-  " ‘}“üƒ‚[ƒhEŒŸõƒ‚[ƒh‚Å‚ÌƒfƒtƒHƒ‹ƒg‚ÌIMEó‘Ôİ’è
+  " æŒ¿å…¥ãƒ¢ãƒ¼ãƒ‰ãƒ»æ¤œç´¢ãƒ¢ãƒ¼ãƒ‰ã§ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®IMEçŠ¶æ…‹è¨­å®š
   set iminsert=0 imsearch=0
   if has('xim') && has('GUI_GTK')
-    " XIM‚Ì“ü—ÍŠJnƒL[‚ğİ’è:
-    " ‰º‹L‚Ì s-space ‚ÍShift+Space‚ÌˆÓ–¡‚Åkinput2+canna—pİ’è
+    " XIMã®å…¥åŠ›é–‹å§‹ã‚­ãƒ¼ã‚’è¨­å®š:
+    " ä¸‹è¨˜ã® s-space ã¯Shift+Spaceã®æ„å‘³ã§kinput2+cannaç”¨è¨­å®š
     "set imactivatekey=s-space
   endif
-  " ‘}“üƒ‚[ƒh‚Å‚ÌIMEó‘Ô‚ğ‹L‰¯‚³‚¹‚È‚¢ê‡AŸs‚ÌƒRƒƒ“ƒg‚ğ‰ğœ
+  " æŒ¿å…¥ãƒ¢ãƒ¼ãƒ‰ã§ã®IMEçŠ¶æ…‹ã‚’è¨˜æ†¶ã•ã›ãªã„å ´åˆã€æ¬¡è¡Œã®ã‚³ãƒ¡ãƒ³ãƒˆã‚’è§£é™¤
   "inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 endif
 
