@@ -79,7 +79,7 @@ let g:quickrun_config['markdown'] = {
       \ }
 
 " toggle <sp>ell
-nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_us<CR>:setlocal spell?<CR>
+nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_us,cjk<CR>:setlocal spell?<CR>
 
 
 
