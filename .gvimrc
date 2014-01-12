@@ -18,3 +18,10 @@ if has('multi_byte_ime') || has('xim')
   "inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 endif
 
+
+" -----------------------------------------
+" Read .gvimrc.local if any
+" This must be described at the last line
+if filereadable(expand('~/.gvimrc.local'))
+  source ~/.gvimrc.local
+endif
