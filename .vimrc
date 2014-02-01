@@ -5,7 +5,10 @@ setlocal omnifunc=syntaxcomplete#Complete
 
 " Golang setting
 if $GOROOT != ''
+  filetype plugin indent off
   set rtp+=$GOROOT/misc/vim
+  filetype plugin indent on
+  syntax on
   exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
   set completeopt=menu,preview
 endif
