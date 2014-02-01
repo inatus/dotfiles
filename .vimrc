@@ -1,6 +1,8 @@
 set nocompatible
 filetype off            " for vundle
 
+setlocal omnifunc=syntaxcomplete#Complete
+
 " Golang setting
 if $GOROOT != ''
   set rtp+=$GOROOT/misc/vim
