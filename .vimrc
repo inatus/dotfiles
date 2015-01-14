@@ -1,3 +1,4 @@
+set undodir=$HOME/.vim/undodir	" Set Undo file directory
 set shortmess+=I		" Hide Uganda message
 set nocompatible
 filetype off            " for vundle
