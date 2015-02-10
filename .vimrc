@@ -1,4 +1,6 @@
 set undodir=$HOME/.vim/undodir	" Set Undo file directory
+set backupdir=$HOME/.vim/backupdir	" Set Backup file directory
+set directory=$HOME/.vim/swapdir	" Set Swap file directory
 set shortmess+=I		" Hide Uganda message
 set nocompatible
 filetype off            " for vundle
@@ -49,7 +51,6 @@ set antialias
 set tabstop=4
 set shiftwidth=4
 set number
-set nobackup
 set visualbell t_vb=
 set textwidth=0
 
