@@ -4,9 +4,7 @@ set backupdir=$HOME/.vim/backupdir	" Set Backup file directory
 set directory=$HOME/.vim/swapdir	" Set Swap file directory
 set shortmess+=I		" Hide Uganda message
 set nocompatible
-set textwidth=0
 filetype off            " for vundle
-autocmd FileType text setlocal textwidth=0
 
 setlocal omnifunc=syntaxcomplete#Complete
 
@@ -56,6 +54,7 @@ set shiftwidth=4
 set number
 set visualbell t_vb=
 set textwidth=0
+autocmd FileType text setlocal textwidth=0
 
 " memolist.vim config
 map <Leader>mn  :MemoNew<CR>
@@ -95,7 +94,11 @@ let g:quickrun_config['markdown'] = {
 " toggle <sp>ell
 nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_us,cjk<CR>:setlocal spell?<CR>
 
-
+" Treat .md file as markdown in Previm
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
 
 " -----------------------------------------
 " Read .vimrc.local if any
