@@ -1,9 +1,12 @@
+set encoding=utf-8
 set undodir=$HOME/.vim/undodir	" Set Undo file directory
 set backupdir=$HOME/.vim/backupdir	" Set Backup file directory
 set directory=$HOME/.vim/swapdir	" Set Swap file directory
 set shortmess+=I		" Hide Uganda message
 set nocompatible
+set textwidth=0
 filetype off            " for vundle
+autocmd FileType text setlocal textwidth=0
 
 setlocal omnifunc=syntaxcomplete#Complete
 
