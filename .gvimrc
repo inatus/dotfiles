@@ -2,7 +2,7 @@ set transparency=5
 set background=light
 colorscheme solarized
 
-set guifont=Ricty:h12
+set guifont=Ricty\ Diminished:h12
 
 if has('multi_byte_ime') || has('xim')
   " IME ON時のカーソルの色を設定(設定例:紫)
