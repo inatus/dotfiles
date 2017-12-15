@@ -34,6 +34,7 @@ NeoBundle 'http://github.com/kannokanno/previm.git'
 NeoBundle 'pentie/VimRepress'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'http://github.com/mattn/emmet-vim.git'
 
 syntax enable
 set background=dark
@@ -44,7 +45,7 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 set spell
-set spelllang=en_us,cjk
+set spelllang=en_uk,cjk
 
 set showtabline=2
 set guioptions-=T
@@ -92,7 +93,7 @@ let g:quickrun_config['markdown'] = {
       \ }
 
 " toggle <sp>ell
-nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_us,cjk<CR>:setlocal spell?<CR>
+nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_uk,cjk<CR>:setlocal spell?<CR>
 
 " Treat .md file as markdown in Previm
 augroup PrevimSettings
