@@ -45,7 +45,7 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 set spell
-set spelllang=en_uk,cjk
+set spelllang=en_gb,cjk
 
 set showtabline=2
 set guioptions-=T
