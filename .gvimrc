@@ -1,3 +1,4 @@
+﻿set renderoptions=type:directx
 set transparency=5
 set background=light
 colorscheme solarized
