@@ -4,6 +4,14 @@ set backupdir=$HOME/.vim/backupdir	" Set Backup file directory
 set directory=$HOME/.vim/swapdir	" Set Swap file directory
 set shortmess+=I		" Hide Uganda message
 set nocompatible
+"カーソルを行頭，行末で止まらないようにする
+set whichwrap=b,s,h,l,<,>,[,]
+"BSで削除できるものを指定する
+" indent  : 行頭の空白
+" eol     : 改行
+" start   : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start
+
 filetype off            " for vundle
 
 setlocal omnifunc=syntaxcomplete#Complete
