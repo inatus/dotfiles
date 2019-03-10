@@ -1,9 +1,17 @@
 ﻿set renderoptions=type:directx
-set transparency=5
 set background=light
 colorscheme solarized
 
-set guifont=Ricty\ Diminished:h12
+if has('unix') 
+	set guifont=Ricty\ 12
+endif
+if has('mac')
+	set transparency=5
+endif
+if has('win32') || has ('win64')
+	set transparency=5
+	set guifont=Ricty\ Diminished:h12
+endif
 
 if has('multi_byte_ime') || has('xim')
   " IME ON時のカーソルの色を設定(設定例:紫)

@@ -43,7 +43,9 @@ NeoBundle 'pentie/VimRepress'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'http://github.com/mattn/emmet-vim.git'
-NeoBundle 'http://github.com/vim-scripts/OutlookVim.git'
+if has('win32') || has ('win64')
+	NeoBundle 'http://github.com/vim-scripts/OutlookVim.git'
+endif
 
 syntax enable
 set background=dark
