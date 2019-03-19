@@ -7,6 +7,7 @@ if has('unix')
 endif
 if has('mac')
 	set transparency=5
+	set guifont=RictyDiminished-Regular:h14
 endif
 if has('win32') || has ('win64')
 	set transparency=5
