@@ -2,6 +2,7 @@ set encoding=utf-8
 set undodir=$HOME/.vim/undodir	" Set Undo file directory
 set backupdir=$HOME/.vim/backupdir	" Set Backup file directory
 set directory=$HOME/.vim/swapdir	" Set Swap file directory
+set runtimepath+=$HOME/.vim/runtimepath/im_control.vim-master	" Set Runtimepath to Japanese IME
 set shortmess+=I		" Hide Uganda message
 set nocompatible
 "カーソルを行頭，行末で止まらないようにする
@@ -120,6 +121,21 @@ augroup PrevimSettings
     autocmd!
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
+
+" Japanese IME Settings
+if has('unix') 
+  let IM_CtrlMode = 6
+  inoremap <silent> <C-j> <C-r>=IMState('FixMode')<CR>
+endif
+if has('mac')
+  let IM_CtrlMode = 4
+  inoremap <silent> <C-j> <C-^><C-r>=IMState('FixMode')<CR>
+endif
+if has('win32') || has ('win64')
+  let IM_CtrlMode = 4
+  inoremap <silent> <C-j> <C-^><C-r>=IMState('FixMode')<CR>
+endif
+
 
 " -----------------------------------------
 " Read .vimrc.local if any
