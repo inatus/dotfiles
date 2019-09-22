@@ -2,7 +2,6 @@ set encoding=utf-8
 set undodir=$HOME/.vim/undodir	" Set Undo file directory
 set backupdir=$HOME/.vim/backupdir	" Set Backup file directory
 set directory=$HOME/.vim/swapdir	" Set Swap file directory
-set runtimepath+=$HOME/.vim/runtimepath/im_control.vim-master	" Set Runtimepath to Japanese IME
 set shortmess+=I		" Hide Uganda message
 set nocompatible
 "カーソルを行頭，行末で止まらないようにする
@@ -44,6 +43,7 @@ NeoBundle 'pentie/VimRepress'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'http://github.com/mattn/emmet-vim.git'
+NeoBundle 'https://github.com/fuenor/im_control.vim.git'
 if has('win32') || has ('win64')
 	NeoBundle 'http://github.com/vim-scripts/OutlookVim.git'
 endif
