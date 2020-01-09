@@ -43,7 +43,7 @@ NeoBundle 'pentie/VimRepress'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'http://github.com/mattn/emmet-vim.git'
-NeoBundle 'https://github.com/fuenor/im_control.vim.git'
+NeoBundle 'https://github.com/pepo-le/fcitx-mem-re.git'
 if has('win32') || has ('win64')
 	NeoBundle 'http://github.com/vim-scripts/OutlookVim.git'
 endif
@@ -124,16 +124,7 @@ augroup END
 
 " Japanese IME Settings
 if has('unix') 
-  let IM_CtrlMode = 6
-  inoremap <silent> <C-j> <C-r>=IMState('FixMode')<CR>
-endif
-if has('mac')
-  let IM_CtrlMode = 4
-  inoremap <silent> <C-j> <C-^><C-r>=IMState('FixMode')<CR>
-endif
-if has('win32') || has ('win64')
-  let IM_CtrlMode = 4
-  inoremap <silent> <C-j> <C-^><C-r>=IMState('FixMode')<CR>
+  set iminsert=1
 endif
 
 
